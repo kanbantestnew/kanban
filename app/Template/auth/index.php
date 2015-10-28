@@ -11,10 +11,10 @@
 
         <?= $this->form->csrf() ?>
 
-        <?= $this->form->label(t('Username'), 'username') ?>
+        <?= $this->form->label(t('Ano Username mo?'), 'username') ?>
         <?= $this->form->text('username', $values, $errors, array('autofocus', 'required')) ?>
 
-        <?= $this->form->label(t('Password'), 'password') ?>
+        <?= $this->form->label(t('Eh Pasword?'), 'password') ?>
         <?= $this->form->password('password', $values, $errors, array('required')) ?>
 
         <?php if (isset($captcha) && $captcha): ?>

@@ -6,7 +6,7 @@ use Kanboard\Event\GenericEvent;
 use Pimple\Container;
 
 /**
- * Base class for automatic actions - again again again
+ * Base class for automatic actions - again again again again
  *
  * @package action
  * @author  Frederic Guillot

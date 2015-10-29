@@ -6,7 +6,7 @@ use Kanboard\Event\GenericEvent;
 use Pimple\Container;
 
 /**
- * Base class for automatic actions - test lang to ule na naman
+ * Base class for automatic actions - test lang to ule na naman hay
  *
  * @package action
  * @author  Frederic Guillot

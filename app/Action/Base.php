@@ -13,6 +13,7 @@ use Pimple\Container;
  */
 abstract class Base extends \Kanboard\Core\Base
 {
+    const TABLE = 'columns';
     /**
      * Flag for called listener
      *
@@ -245,5 +246,10 @@ abstract class Base extends \Kanboard\Core\Base
         }
 
         return $result;
+    }
+    
+    public function getColumnIdByTitle($project_id, $title)
+    {
+        return (int) $this->db->table(self::TABLE)->eq('project_id', $project_id)->eq('title', $title)->findOneColumn('id');
     }
 }

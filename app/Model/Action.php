@@ -82,6 +82,7 @@ class Action extends Base
             'TaskMoveColumnCategoryChange' => t('Move the task to another column when the category is changed'),
             'TaskEmail' => t('Send a task by email to someone'),
             'TaskAssignColorLink' => t('Change task color when using a specific task link'),
+            'TaskMoveClose' => t('Move task to Done - For SA/TL Approval and close'),
         );
 
         $values = array_merge($values, $this->actions);
